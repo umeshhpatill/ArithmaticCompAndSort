@@ -9,3 +9,4 @@ read -p "a: " b
 read -p "a: " c
 
 d=$(($a + $b * c))
+e=$(($a * $b + c))
