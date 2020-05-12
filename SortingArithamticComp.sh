@@ -7,3 +7,5 @@ echo "Enter Three Numbers:"
 read -p "a: " a
 read -p "a: " b
 read -p "a: " c
+
+d=$(($a + $b * c))
