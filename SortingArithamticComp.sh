@@ -17,3 +17,11 @@ echo "Ans1=$d"
 echo "Ans2=$e"
 echo "Ans3=$f"
 echo "Ans4=$g"
+
+count=0
+for i in ${!ArithOpsDict[@]}
+do
+	ArithOpsArr[count++]=${ArithOpsDict[$i]}
+done
+
+echo ${ArithOpsArr[@]}
