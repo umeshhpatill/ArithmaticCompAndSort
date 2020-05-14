@@ -2,6 +2,9 @@
 
 echo "Arithamatic computation and sorting"
 
+declare -A ArithOpsDict
+declare -a ArithOpsArr
+
 echo "Enter Three Numbers:"
 
 read -p "a: " a
@@ -25,4 +28,6 @@ do
 done
 
 sortInDesc=`printf "%s\n" ${ArithOpsArr[@]} | sort -nr`
-echo $sortInDesc
+sortInAsc=`printf "%s\n" ${ArithOpsArr[@]} | sort -n`
+
+echo $sortInAsc
